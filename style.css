@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    background:linear-gradient(135deg, #F0F0F3, #D9E4EC);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    transition: background 0.3s ease-in-out;
+
+}
+body.dark-mode{
+     
+        background: linear-gradient(135deg, #1e1e2f, #121212);
+    background-color: #121212;
+    color: #f0f0f0;
+    
+
+}
+
+.container{
+      background: rgba(255, 255, 255, 0.2);
+      width: 400px;
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1) ;
+      text-align: center;
+      border-radius: 15px;
+
+}
+h1{
+    font-size: 24px;
+    font-weight: 600;
+            color: #333;
+}
+ #themeselector{
+    background-color:transparent ;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    position: absolute;
+    top:10px;
+    right:20px;
+    transition: transform(0.3s);
+    cursor: pointer;
+    
+ }
+ #themeselector:hover{
+    transform: scale(1.1);
+ }
+ 
+ .todoinput{
+    display: flex;
+    margin: 20px 0;
+    gap: 10px;
+    cursor: pointer;
+ }
+ input{
+    flex: 1;
+    border-radius:10px;
+    padding: 10px;
+    gap: 10px;
+    border: 2px solid #cccc;
+    cursor: pointer;
+
+ }
+
+ #addtask{
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #4CAF50;
+    border:2px solid #cccc;
+    cursor: pointer;
+
+ }
+ #addtask:hover {
+    background: #388E3C;
+}
+
+
+ul{
+
+    padding: 0;
+}
+
+li{
+    background: #F0F0F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 5px;
+    transition: transform 0.3s ease-in-out;
+   
+}
+body.dark-mode li {
+    background-color: #1f1f1f;
+  }
+li:hover{
+    transform:scale(1.02);
+}
+li button{
+    border-radius: 5px;
+    border: 2px solid #cccc;
+    margin: 5px;
+}
